@@ -25,7 +25,7 @@ class User
     /**
      * @ORM\ManyToOne(targetEntity=fonction::class, inversedBy="users")
      */
-    private $function;
+    private $fonction;
 
     public function getId(): ?int
     {
@@ -46,12 +46,12 @@ class User
 
     public function getFunction(): ?fonction
     {
-        return $this->function;
+        return $this->fonction;
     }
 
-    public function setFunction(?fonction $function): self
+    public function setFunction(?fonction $fonction): self
     {
-        $this->function = $function;
+        $this->fonction = $fonction;
 
         return $this;
     }
