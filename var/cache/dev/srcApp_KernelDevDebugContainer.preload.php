@@ -10,7 +10,7 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).'/vendor/autoload.php';
-require __DIR__.'/ContainerNP2nYhK/srcApp_KernelDevDebugContainer.php';
+require __DIR__.'/Container9S2UwwJ/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -24,6 +24,7 @@ $classes[] = 'Symfony\Bundle\WebProfilerBundle\WebProfilerBundle';
 $classes[] = 'Symfony\Bundle\MonologBundle\MonologBundle';
 $classes[] = 'Symfony\Bundle\DebugBundle\DebugBundle';
 $classes[] = 'Symfony\Bundle\MakerBundle\MakerBundle';
+$classes[] = 'Symfony\Bundle\WebServerBundle\WebServerBundle';
 $classes[] = 'Symfony\Component\HttpClient\TraceableHttpClient';
 $classes[] = 'Symfony\Contracts\HttpClient\HttpClientInterface';
 $classes[] = 'Symfony\Component\HttpClient\HttpClient';
@@ -32,6 +33,8 @@ $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\EventListener\ResolveControllerNameSubscriber';
 $classes[] = 'Symfony\Component\HttpFoundation\RequestMatcher';
 $classes[] = 'Symfony\Component\DependencyInjection\ServiceLocator';
+$classes[] = 'App\Repository\FonctionRepository';
+$classes[] = 'App\Repository\RoleRepository';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\RedirectController';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController';
 $classes[] = 'Symfony\Component\Cache\DoctrineProvider';
@@ -476,5 +479,9 @@ $classes[] = 'Symfony\Bundle\WebProfilerBundle\Controller\RouterController';
 $classes[] = 'Symfony\Bundle\WebProfilerBundle\Csp\ContentSecurityPolicyHandler';
 $classes[] = 'Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator';
 $classes[] = 'Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerRunCommand';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerStartCommand';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerStopCommand';
 
 Preloader::preload($classes);
