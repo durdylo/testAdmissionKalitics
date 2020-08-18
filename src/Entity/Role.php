@@ -27,10 +27,11 @@ class Role
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $descripton;
+    private $description;
 
     /**
      * @ORM\ManyToMany(targetEntity=Fonction::class, mappedBy="Roles")
+     * @ORM\Column(nullable=true)
      */
     private $fonctions;
 
@@ -56,14 +57,14 @@ class Role
         return $this;
     }
 
-    public function getDescripton(): ?string
+    public function getdescription(): ?string
     {
-        return $this->descripton;
+        return $this->description;
     }
 
-    public function setDescripton(string $descripton): self
+    public function setdescription(string $description): self
     {
-        $this->descripton = $descripton;
+        $this->description = $description;
 
         return $this;
     }

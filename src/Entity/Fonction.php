@@ -26,6 +26,7 @@ class Fonction
 
     /**
      * @ORM\ManyToMany(targetEntity=Role::class, inversedBy="fonctions")
+     * @ORM\Column(nullable=true)
      */
     private $Roles;
 
