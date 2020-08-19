@@ -15,6 +15,11 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\BlogController::index'], null, null, null, false, false, null]],
         '/agenda' => [[['_route' => 'agenda', '_controller' => 'App\\Controller\\BlogController::agenda'], null, null, null, false, false, null]],
+        '/parametre' => [[['_route' => 'parametre', '_controller' => 'App\\Controller\\BlogController::parametre'], null, null, null, false, false, null]],
+        '/fiches_de_paie' => [[['_route' => 'fiches_de_paie', '_controller' => 'App\\Controller\\BlogController::fiches_de_paie'], null, null, null, false, false, null]],
+        '/gestion' => [[['_route' => 'gestion', '_controller' => 'App\\Controller\\BlogController::gestion'], null, null, null, false, false, null]],
+        '/reunions' => [[['_route' => 'reunions', '_controller' => 'App\\Controller\\BlogController::reunions'], null, null, null, false, false, null]],
+        '/consultations_chantier' => [[['_route' => 'consultations_chantier', '_controller' => 'App\\Controller\\BlogController::consultations_chantier'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

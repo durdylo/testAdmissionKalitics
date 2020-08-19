@@ -17,4 +17,9 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\BlogController::index'], [], [['text', '/']], [], []],
     'agenda' => [[], ['_controller' => 'App\\Controller\\BlogController::agenda'], [], [['text', '/agenda']], [], []],
+    'parametre' => [[], ['_controller' => 'App\\Controller\\BlogController::parametre'], [], [['text', '/parametre']], [], []],
+    'fiches_de_paie' => [[], ['_controller' => 'App\\Controller\\BlogController::fiches_de_paie'], [], [['text', '/fiches_de_paie']], [], []],
+    'gestion' => [[], ['_controller' => 'App\\Controller\\BlogController::gestion'], [], [['text', '/gestion']], [], []],
+    'reunions' => [[], ['_controller' => 'App\\Controller\\BlogController::reunions'], [], [['text', '/reunions']], [], []],
+    'consultations_chantier' => [[], ['_controller' => 'App\\Controller\\BlogController::consultations_chantier'], [], [['text', '/consultations_chantier']], [], []],
 ];

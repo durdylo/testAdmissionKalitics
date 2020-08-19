@@ -78,22 +78,47 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("agenda");
         echo "\">Agenda</a>
       </li>
-
-      <li class=\"nav-item\">
-        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
+       <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"";
+        // line 29
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("parametre");
+        echo "\">Parametre</a>
+      </li> <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"";
+        // line 31
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fiches_de_paie");
+        echo "\">Fiche de paie</a>
+      </li> <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"";
+        // line 33
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("gestion");
+        echo "\">Gestion </a>
+      </li> <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"";
+        // line 35
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reunions");
+        echo "\">Réunions d'équipe</a>
+      </li> <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"";
+        // line 37
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("consultations_chantier");
+        echo "\">Consultation chantier</a>
       </li>
-    </ul>
+
+      ";
+        // line 43
+        echo "    </ul>
    
   </div>
 </nav>
     <div class=\" container\">
                             ";
-        // line 37
+        // line 48
         $this->displayBlock('body', $context, $blocks);
-        // line 38
+        // line 49
         echo "                            ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 39
+        // line 50
         echo "            </div>
 
     <!-- Optional JavaScript -->
@@ -111,7 +136,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 37
+    // line 48
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -129,7 +154,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 38
+    // line 49
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -159,7 +184,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     public function getDebugInfo()
     {
-        return array (  133 => 38,  115 => 37,  97 => 39,  94 => 38,  92 => 37,  78 => 26,  72 => 23,  61 => 15,  45 => 1,);
+        return array (  158 => 49,  140 => 48,  122 => 50,  119 => 49,  117 => 48,  110 => 43,  104 => 37,  99 => 35,  94 => 33,  89 => 31,  84 => 29,  78 => 26,  72 => 23,  61 => 15,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -191,10 +216,21 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
       <li class=\"nav-item\">
         <a class=\"nav-link\" href=\"{{ path('agenda') }}\">Agenda</a>
       </li>
-
-      <li class=\"nav-item\">
-        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
+       <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"{{ path('parametre') }}\">Parametre</a>
+      </li> <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"{{ path('fiches_de_paie') }}\">Fiche de paie</a>
+      </li> <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"{{ path('gestion') }}\">Gestion </a>
+      </li> <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"{{ path('reunions') }}\">Réunions d'équipe</a>
+      </li> <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"{{ path('consultations_chantier') }}\">Consultation chantier</a>
       </li>
+
+      {# <li class=\"nav-item\">
+        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
+      </li> #}
     </ul>
    
   </div>
