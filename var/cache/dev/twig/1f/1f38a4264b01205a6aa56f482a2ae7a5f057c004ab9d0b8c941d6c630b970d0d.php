@@ -27,8 +27,6 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         $this->parent = false;
 
         $this->blocks = [
-            'title' => [$this, 'block_title'],
-            'stylesheets' => [$this, 'block_stylesheets'],
             'body' => [$this, 'block_body'],
             'javascripts' => [$this, 'block_javascripts'],
         ];
@@ -44,30 +42,64 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
-        echo "<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset=\"UTF-8\">
-        <title>";
-        // line 5
-        $this->displayBlock('title', $context, $blocks);
-        echo "</title>
-        ";
-        // line 6
-        $this->displayBlock('stylesheets', $context, $blocks);
-        // line 7
-        echo "    </head>
-    <body>
-        ";
-        // line 9
+        echo "<!doctype html>
+<html lang=\"en\">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset=\"utf-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">
+
+    <!-- Bootstrap CSS -->
+    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+  <a class=\"navbar-brand\" href=\"#\">Navbar</a>
+  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+    <span class=\"navbar-toggler-icon\"></span>
+  </button>
+
+  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+    <ul class=\"navbar-nav mr-auto\">
+      <li class=\"nav-item active\">
+        <a class=\"nav-link\" href=\"";
+        // line 23
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo "\">Home <span class=\"sr-only\">(current)</span></a>
+      </li>
+      <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"";
+        // line 26
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("agenda");
+        echo "\">Link</a>
+      </li>
+
+      <li class=\"nav-item\">
+        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
+    <div class=\" container\">
+                            ";
+        // line 37
         $this->displayBlock('body', $context, $blocks);
-        // line 10
-        echo "        ";
+        // line 38
+        echo "                            ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 11
-        echo "    </body>
-</html>
-";
+        // line 39
+        echo "            </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>
+  </body>
+</html>";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -76,44 +108,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 5
-    public function block_title($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
-
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
-
-        echo "Welcome!";
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
-    }
-
-    // line 6
-    public function block_stylesheets($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
-    }
-
-    // line 9
+    // line 37
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -131,7 +126,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 10
+    // line 38
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -154,25 +149,64 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  135 => 10,  117 => 9,  99 => 6,  80 => 5,  68 => 11,  65 => 10,  63 => 9,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  130 => 38,  112 => 37,  94 => 39,  91 => 38,  89 => 37,  75 => 26,  69 => 23,  45 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset=\"UTF-8\">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
-", "base.html.twig", "/home/lolo/Documents/testAdmissionKalitics/templates/base.html.twig");
+        return new Source("<!doctype html>
+<html lang=\"en\">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset=\"utf-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">
+
+    <!-- Bootstrap CSS -->
+    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+  <a class=\"navbar-brand\" href=\"#\">Navbar</a>
+  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+    <span class=\"navbar-toggler-icon\"></span>
+  </button>
+
+  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+    <ul class=\"navbar-nav mr-auto\">
+      <li class=\"nav-item active\">
+        <a class=\"nav-link\" href=\"{{ path('home') }}\">Home <span class=\"sr-only\">(current)</span></a>
+      </li>
+      <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"{{ path('agenda') }}\">Link</a>
+      </li>
+
+      <li class=\"nav-item\">
+        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
+    <div class=\" container\">
+                            {% block body %}{% endblock %}
+                            {% block javascripts %}{% endblock %}
+            </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>
+  </body>
+</html>", "base.html.twig", "/home/lolo/Documents/testAdmissionKalitics/templates/base.html.twig");
     }
 }
