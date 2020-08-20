@@ -25,19 +25,13 @@ class Fonction
     private $name;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Role::class, inversedBy="fonctions")
-     * @ORM\Column(nullable=true)
-     */
-    private $Roles;
-
-    /**
      * @ORM\OneToMany(targetEntity=User::class, mappedBy="function")
+     * @ORM\Column(nullable=true)
      */
     private $users;
 
     public function __construct()
     {
-        $this->Roles = new ArrayCollection();
         $this->users = new ArrayCollection();
     }
 
@@ -58,31 +52,6 @@ class Fonction
         return $this;
     }
 
-    /**
-     * @return Collection|Role[]
-     */
-    public function getRoles(): Collection
-    {
-        return $this->Roles;
-    }
-
-    public function addRole(Role $role): self
-    {
-        if (!$this->Roles->contains($role)) {
-            $this->Roles[] = $role;
-        }
-
-        return $this;
-    }
-
-    public function removeRole(Role $role): self
-    {
-        if ($this->Roles->contains($role)) {
-            $this->Roles->removeElement($role);
-        }
-
-        return $this;
-    }
 
     /**
      * @return Collection|User[]

@@ -29,16 +29,7 @@ class Role
      */
     private $description;
 
-    /**
-     * @ORM\ManyToMany(targetEntity=Fonction::class, mappedBy="Roles")
-     * @ORM\Column(nullable=true)
-     */
-    private $fonctions;
 
-    public function __construct()
-    {
-        $this->fonctions = new ArrayCollection();
-    }
 
     public function getId(): ?int
     {
@@ -65,34 +56,6 @@ class Role
     public function setdescription(string $description): self
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|Fonction[]
-     */
-    public function getFonctions(): Collection
-    {
-        return $this->fonctions;
-    }
-
-    public function addFonction(Fonction $fonction): self
-    {
-        if (!$this->fonctions->contains($fonction)) {
-            $this->fonctions[] = $fonction;
-            $fonction->addRole($this);
-        }
-
-        return $this;
-    }
-
-    public function removeFonction(Fonction $fonction): self
-    {
-        if ($this->fonctions->contains($fonction)) {
-            $this->fonctions->removeElement($fonction);
-            $fonction->removeRole($this);
-        }
 
         return $this;
     }
